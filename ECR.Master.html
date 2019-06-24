@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en-US">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>ECR: Environmental &amp; Cultural Research Logic</title>
+   <link href="/styles/ecr.css" rel="stylesheet" type="text/css" />
+   <link href="/css/style.css" rel="stylesheet" type="text/css" />
+   <link href="/css/forms.css?ver=2" rel="stylesheet" type="text/css" />
+   <!--[if IE]>
+	<link href="/css/all-ie-only.css" rel="stylesheet" type="text/css" />
+   <![endif]-->
+   <script src="/scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+   <script src="/scripts/toolkit1014.js" type="text/javascript"></script>
+   <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header" style="height:248px">    	
+        <div id="banner"> 
+        	<a href="/account/MainMenu.aspx">
+            	<img src="../img/header/ECRFieldProLogo.png" alt="ECR Website Banner" style="margin:40px 0px 0px 15px; width:940px;" border="0"/>
+            </a>
+        </div><!----- /banner ----->
+    <div id="mainMenu">
+	    <ul class="nav-menu">
+	      <li class="nav-menu"><a class="menu-link" href="/account/MainMenu.aspx">Home</a></li>
+	      <li class="nav-menu"><a class="menu-link" href="/account/Profile.aspx">Profile</a></li>	      
+	      <li class="nav-menu dropdown">
+		    <a href="javascript:void(0)" class="menu-link dropbtn">Projects</a>
+		    <div class="dropdown-content">
+		          <a class="dropdown-link" href="/account/SnapshotManager.aspx">Manage Projects</a>		      
+                  <a id="add_new_iowa" class="dropdown-link" href="https://archlogic.its.uiowa.edu/byao/ol3_new/ol3Web/ol3.html">Add Iowa Snapshot</a>
+                  <a id="add_new_michigan" class="dropdown-link" href="/account/SnapshotPreview.aspx?action=add&v=1">Add Michigan Snapshot</a>
+                  <a id="add_new_minnesota" class="dropdown-link" href="https://www.dev.ecrfieldpro.com/ol3_Minnesota/ol3.html">Add Minnesota Snapshot</a>
+                  <a id="add_new_wisconsin" class="dropdown-link" href="https://archlogic.its.uiowa.edu/byao/ol3_wisconsin/ol3Web/ol3.html">Add Wisconsin Snapshot</a>
+		    </div>
+	      </li>
+	      <li class="nav-menu dropdown">
+		    <a href="javascript:void(0)" class="menu-link dropbtn">Admin</a>
+		    <div class="dropdown-content">
+		      <a class="dropdown-link" href="/admin/ManageUsers.aspx">Manage Users</a>
+		      <a class="dropdown-link" href="/admin/ManageGroups.aspx">Manage Groups</a>
+              <a class="dropdown-link" href="/admin/ViewFormResults.aspx">View Form Results</a>
+              <a class="dropdown-link" href="/admin/EditForms.aspx">Edit Forms</a>
+		    </div>
+	      </li>
+	    </ul>
+    </div>
+
+    </div> <!----- /header ---->
+    
+    <div id="content">
+<asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>                
+    </div><!----- /content ----->
+    
+    <div id="footer" style="height:20px"></div><!----- /footer ----->    
+</div><!----- wrapper ----->
+</body>
+</html>	
+
