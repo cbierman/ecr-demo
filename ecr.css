@@ -91,9 +91,9 @@ footer {
     height: 8%;
     background-color: #2c3c4c;
     border-top: 3px solid #fedc00;
-    color: white
+    color: white;
 }
 
-#footerWrapper {
-    
+#ProjectsTable {
+    background-color: white;
 }
