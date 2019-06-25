@@ -30,6 +30,11 @@ body {
     color: white;
 }
 
+.btn-ecr-accent {
+    background-color: #f0a054;
+    color: white;
+}
+
 .visually-hidden {
     visibility: hidden;
     position: absolute;
