@@ -1,0 +1,76 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  display: block;
+}
+#page-wrapper {
+  min-height: 100%;
+  height:100%;
+}
+
+.sidebar {
+  min-height: 100vh;
+}
+
+.branding-bar {
+  height:54px;
+}
+
+
+.nav-item {
+  color: white;
+  padding: 5px;
+}
+
+.nav-item.active {
+  /* border-bottom: 1px solid gray; */
+}
+
+.bg-ecrblue {
+  background: #495e86;
+  color: white;
+}
+
+.sidebar-toggle-wrapper {
+  padding: 10px 5px;
+}
+
+.sidebar-toggle {
+  color: white;
+  font-size: 1.8rem;
+  
+}
+.sidebar {
+  width: 25%;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    position: fixed;
+    top: 54px; /* Height of navbar */
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    z-index: 99999;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+  }
+  .sidebar.open {
+    left: 0;
+    width: 100%;
+    visibility: visible;
+  }
+  .sidebar-toggle {
+    visibility: visible;
+  }
+}
+
+
