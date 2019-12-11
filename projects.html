@@ -32,12 +32,12 @@
           <div class="d-flex flex-row">
             <div class="bg-ecrblue d-flex flex-column sidebar">
               <nav class="d-flex flex-column justify-content-center">
-                <a class="nav-item" href="#">
+                <a class="nav-item" href="index.html">
                   <i class="fas fa-columns"></i>
                   Dashboard
                 </a>
       
-                <a class="nav-item" href="#">
+                <a class="nav-item active" href="projects.html">
                   <i class="fas fa-project-diagram"></i>
                   Projects
                 </a>
@@ -49,38 +49,54 @@
               </nav>
             </div>
             
-            <main class="w-100 m-1">
-                <div class="d-flex flex-row justify-content-end projects-actions mb-2">
-                    <button class="btn btn-primary"  data-toggle="modal" data-target="#newProjectModal">
-                        Create Project
-                    </button>
-                </div>
-                <div class="w-100">
-                    <table id="projectsTable" class="table table-striped" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Project Name</th>
-                                <th>Created Date</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cale's Awesome Project</td>
-                                <td>12/01/19</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Edit
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item text-danger" href="#">Delete Project</a>
+            <main class="m-1">
+                <div class="container-fluid">
+                    <div class="d-flex flex-row justify-content-end projects-actions mb-2">
+                        <button class="btn btn-primary"  data-toggle="modal" data-target="#newProjectModal">
+                            Create Project
+                        </button>
+                    </div>
+                    <div class="w-100">
+                        <table id="projectsTable" class="table table-striped" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Project Name</th>
+                                    <th>Created Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cale's Awesome Project</td>
+                                    <td>12/01/19</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Edit
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item text-danger" href="#">Delete Project</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Josiah Project</td>
+                                    <td>12/04/19</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Edit
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item text-danger" href="#">Delete Project</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </main>
             <div class="modal fade" id="newProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

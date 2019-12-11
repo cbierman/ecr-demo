@@ -10,6 +10,9 @@ body {
   min-height: 100%;
   height:100%;
 }
+main {
+  min-width: 75%;;
+}
 
 .sidebar {
   min-height: 100vh;
@@ -23,6 +26,10 @@ body {
 .nav-item {
   color: white;
   padding: 5px;
+}
+
+.nav-item.active {
+  background-color: #7288b1
 }
 
 .nav-item.active {
